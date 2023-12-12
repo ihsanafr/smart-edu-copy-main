@@ -1,0 +1,953 @@
+body {
+    width: 100vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* nav css */
+.scrolled {
+    background-color: white;
+    /* Atur properti CSS lainnya sesuai kebutuhan Anda */
+}
+
+nav {
+    transition: background-color 0.7s ease;
+    height: 10vh;
+    background-color: #EEFCFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    z-index: 999;  
+    position: fixed;
+    width: 100%;
+
+}
+
+.logo img {
+    
+    margin-left: 50px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.5s ease;
+}
+.navbar-links li:hover a {
+    color: #2FD2BF;
+    z-index: 1;
+}
+
+.navbar-links li {
+    margin-right: 50px;
+    position: relative;
+
+
+}
+
+.navbar-links a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+    text-align: center;
+
+}
+
+.contact-button {
+    margin-right: 50px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #2FD2BF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* home css */
+.home {
+    flex-direction: column;
+    background: #EEFCFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    height: 75vh;
+    width: 100vw;
+}
+
+.img-home {
+    margin-top: 100px;
+    /* width: 50%; */
+    transition: transform 0.5s ease;
+}
+
+
+
+
+.des-home {
+    text-align: center;
+    font-family: Plus Jakarta Sans;
+    color: #6D7475;
+    font-size: 40px;
+    margin-top: 20px;
+    height: 130%;
+    overflow-y: hidden;
+    font-size: 3em  ;
+}
+
+.sp1 {
+    color: #000000;
+    font-weight: 650;
+}
+
+.sp2 {
+    color: #2FD2BF;
+    font-weight: 650;
+    font-style: italic;
+}
+
+.sp2:hover {
+    font-style: normal;
+}
+
+
+/* csss sub-home */
+.sub-home {
+    height: 35vh;
+    background: url(bg-1.png);
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.card-home {
+    margin-top: 50px;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px #00000035;
+    width: 25%;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-home:hover {
+    background-color: #ffffff88;
+    transform: scale(1.1);
+}
+
+
+.tx-judul {
+    font-family: plus jakarta sans;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.text-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    height: 100%;
+    width: 65%;
+}
+
+.tx-des {
+    line-height: 20px;
+    font-size: 15;
+    font-family: plus jakarta sans;
+}
+
+/* about style css ----------*/
+.about {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-about {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:  transform 0.3s ease;
+}
+
+
+
+
+.text-about {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.text-about2 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    flex-direction: column;
+}
+
+
+
+
+
+.des-cabt {
+}
+
+.des-abt {
+    margin-left: 10px
+    text-align: justify;
+    width: 70%;
+    display: flex;
+    font-size: 20px;
+    justify-content: left;
+    align-items: center;
+    color: #666666;
+    font-family: plus jakarta sans;
+}
+
+/* sub-about style css */
+.sub-about {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    height: 200px;
+    align-items: center;
+    /* flex-direction: row; */
+}
+
+.card-about {
+    width: 15%;
+    padding: 10px;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px #00000029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+    transition: transform 0.5s ease;
+}
+
+.card-about:hover {
+    z-index: 1;
+    transform: scale(1.2);
+}
+
+/* kursus css-------- */
+.kursus {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+
+.head-kursus {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.kiri-kursus {
+    width: 50vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.txt-kurs {
+    color: #000000;
+    font-family: plus jakarta sans;
+    font-size: 40px;
+    margin-left: 115px;
+    font-weight: 700;
+}
+
+.txt-kurs span {
+    color: #2FD2BF;
+}
+
+.kanan-kursus {
+    width: 50vw;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.kurs-btn {
+    padding: 15px 30px;
+    margin-right: 115px;
+    background-color: #2FD2BF;
+    border: none;
+    font-size: 20px;
+    font-family: plus jakarta sans;
+    font-weight: 500;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.kurs-btn:hover {
+    background-color: #1C9F8F;
+}
+
+.sub-kursus {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.card-kursus {
+    width: 20%;
+    height: 525px;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px #00000045;
+    display: flex;
+    margin-right: 40px;
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.card-kursus:hover {
+    transform: scale(1.1);
+    background-color: #2fd2bf0a;
+    /* Mengubah skala elemen saat hover */
+}
+
+.img-kurs {
+    width: 100%;
+    /* width: 70%; - Hapus baris ini karena duplikat dan tidak diperlukan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-text-kurs {
+    margin-top: 30px;
+
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.jenis-kurs {
+    font-size: 2.3em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+}
+
+.des-kurs {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+    font-weight: 500;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.button-kurs-area {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+.btn-kurs {
+    color: #ffffff;
+    padding: 18px 130px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+
+/* test-judul*/
+.test-judul {
+    height: 35vh;
+    background: url(bg-2.png);
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.judul-test {
+    margin-top: 40px;
+    font-family: plus jakarta sans;
+    font-size: 60px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px #0000002a;
+    padding: 15px 250px;
+    color: #2FD2BF;
+    font-weight: 600;
+    border-radius: 100px;
+}
+
+/* test CSSS-------- */
+.test {
+    width: 100vw;
+    height: 80vh;
+    background-color: #EEFCFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card-test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 602px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 20px #0000003a;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+}
+
+.card-test:hover {
+    transform: scale(1.1);
+    /* Mengubah skala elemen saat hover */
+}
+
+.atas-test {
+    height: 25%;
+    width: 80%;
+    height: 100px;
+}
+
+.tengah-test {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 45%;
+    width: 80%;
+}
+
+.bawah-test {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 30%;
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.bawah-1 {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bawah-2 {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/* guru style css-------------------- */
+.guru {
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EEFCFF;
+}
+
+.text-guru {
+    margin-top: 40px;
+    width: 100vw;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.judul-guru {
+    font-family: plus jakarta sans;
+    font-size: 57px;
+    font-weight: bold;
+    color: #2FD2BF;
+}
+
+.des-guru {
+    margin-top: 20px;
+    font-family: plus jakarta sans;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #5F6566;
+}
+
+/* card guru-------- */
+.card-guru {
+    width: 100vw;
+    height: 750%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-teacher {
+    margin-left: 70px;
+    margin-right: 70px;
+    background-size: cover;
+    display: flex;
+    width: 23%;
+    flex-direction: column;
+    justify-content: end;
+    height: 648px;
+    border-radius: 35px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.352);
+    transition: transform 0.3s ease-in-out;
+}
+
+.t1 {
+    background: url(mr1.png);
+    background-size: cover;
+}
+
+.t2 {
+    background: url(mr2.png);
+    background-size: cover;
+
+}
+
+.t3 {
+    background: url(mr3.png);
+    background-size: cover;
+}
+
+.card-teacher:hover {
+    transform: scale(1.05);
+}
+
+.info-teacher {
+    background: rgba(94, 106, 255, 0.62);
+    height: 80px;
+    width: auto;
+    padding: 20px;
+    font-family: plus jakarta sans;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0px 0px 35px 35px;
+}
+
+.card-teacher:hover .info-teacher {
+    opacity: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 35px;
+    height: 100%;
+    background: rgba(94, 106, 255, 0.62);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+.card-teacher:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p {
+    font-family: plus jakarta sans;
+    margin: 0;
+    padding: 20px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.join {
+    width: 100vw;
+    height: 90vh;
+    background-color: #EEFCFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: plus jakarta sans;
+}
+
+.join-kiri {
+    padding-left: 140px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.judul-join {
+    line-height: 75px;
+    margin-top: 200px;
+    font-size: 57px;
+    font-weight: bold;
+}
+
+.judul-join span {
+    font-size: 62px;
+    color: #2FD2BF;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.des-join {
+    margin-top: 50px;
+    font-size: 35px;
+    color: #5F6566;
+}
+
+.btn-join {
+    margin-top: 50px;
+    padding: 18px 60px;
+    border: none;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #2FD2BF;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-join:hover {
+    background-color: #1e9d96;
+    /* Warna latar hover yang diinginkan */
+}
+
+.join-kanan {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* fotter */
+
+.foter {
+    font-family: plus jakarta sans;
+    width: 100vw;
+    height: 500px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foter-area {
+    width: 90;
+    height: 266px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.ft-1 {
+    width: 30%;
+    height: 260px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-f {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50%;
+
+}
+
+.des-ft {
+    width: 100%;
+    height: 50%;
+    font-family: plus jakarta sans;
+    font-size: 21px;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+
+.des-fts {
+    width: 75%;
+    text-align: justify;
+    font-family: plus jakarta sans;
+    font-size: 21px;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    line-height: 30px;
+    color: #B0B0B0;
+}
+
+.ft-2 {
+    width: 20%;
+    height: 260px;
+}
+
+.a-ft {
+    font-size: 39px;
+    font-weight: 600;
+    color: #ffffff;
+
+}
+
+.ftt {
+    margin-top: 20px;
+    color: #B0B0B0;
+    font-weight: 400;
+    font-size: 24px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+.ftt:hover {
+    color: #2FD2BF;
+}
+
+
+.ft-3 {
+    width: 25%;
+    height: 260px;
+}
+
+.ft-4 {
+    width: 24%;
+    height: 260px;
+}
+
+.ft-5 {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 260px;
+}
+
+.ft-5 img {
+    margin-bottom: 22px;
+    margin-top: 22px;
+    width: 55px;
+}
+
+
+body.loading {
+    overflow: hidden;
+  }
+
+  .splash-screen {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EEFCFF; /* Set the background color of the splash screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .splash-screen img {
+    width: 400px; /* Set the width of your logo */
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .loading-bar {
+    width: 500px; /* Set the width of the loading bar */
+    height: 30px;
+    border-radius: 20px;
+    background: #ffffff; /* Set the color of the loading bar */
+    position: relative;
+  }
+
+  .loading-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 20px;
+    background: #2FD2BF; /* Set the color of the loading progress */
+    animation: loadingAnimation 2.1s linear infinite; /* Adjust the animation duration */
+  }
+
+  @keyframes loadingAnimation {
+    100% {
+      width: 100%;
+    }
+  }
+
+  .reveal {
+    position: relative;
+    opacity: 0;
+  }
+
+  .reveal.active {
+    opacity: 1;
+  }
+
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+  }
+
+  .active.fade-left {
+    animation: fade-left 1s ease-in;
+  }
+
+  .active.fade-right {
+    animation: fade-right 1s ease-in;
+  }
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 4s ease-in-out forwards;
+  }
+  .fade-in-down {
+    animation-name: fadeInDown;
+  }
+  /* ================================================ */
+  
+
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-100px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-right {
+    0% {
+      transform: translateX(100px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 1;
+      transform: translateY(200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
