@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: plus jakarta sans;
+
+        }
+        .hero{
+            background: #EEFCFF;
+        }
+
+        .ctn1 {
+            width: 100vw;
+            height: 15vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar {
+            width: 80%;
+            height: 7vh;
+            background: white;
+            border-radius: 1000px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 10px #00000022;
+            position: fixed;
+            z-index: 999;
+        }
+
+        .btn-area {
+            width: auto;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+
+        .txt-area {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-back {
+            margin-right: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 1000px;
+            background-color: #2FD2BF;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .judul-nav {
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .judul-nav span {
+            color: #2FD2BF;
+        }
+
+        .ctn2 {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .materi {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card-mtr {
+            padding: 10px;
+            margin-top: 20px;
+            width: 100%;
+            height: 100px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 0px 3px #0000003c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            transition: background-color 0.8s, transform 0.6s;
+        }
+
+        .card-mtr:hover {
+            background-color: #fefefe;
+            box-shadow: 0px 0px 15px #0000003c;
+            transform: scale(1.01);
+
+
+
+
+
+        }
+
+        .card-lny {
+            padding: 10px;
+            margin-top: 20px;
+            width: 100%;
+            height: 100px;
+            background-color: #009A9A;
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px #0000003c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            flex-direction: row;
+        }
+
+        .text-area {
+            width: 85%;
+            height: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .area-text {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .materi-text {
+            margin-bottom: 2px;
+            font-size: 13px;
+            color: #596C88;
+        }
+
+        .materi-judul {
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: -2px;
+        }
+
+        .lny-judul {
+            font-size: 130%;
+            font-weight: 600;
+        }
+
+        .poin {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .poin-text {
+            padding: 3px 10px;
+            text-align: center;
+            font-size: 8px;
+            background-color: #ffffff;
+            border-radius: 1000px;
+            border: 0.5px solid #596C88;
+        }
+
+        .btn-area {
+            width: 10%;
+            height: 100%;
+        }
+
+        .btn-mtr {
+            padding: 8px 25px;
+            border-radius: 1000px;
+            font-weight: 600;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                width: 100%;
+            }
+
+            .btn-area {
+                width: auto;
+            }
+
+            .txt-area {
+                width: auto;
+            }
+
+            .judul-nav {
+                font-size: 20px;
+            }
+
+            .btn-back {
+                padding: 5px 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="ctn1">
+            <div class="navbar">
+                <div class="btn-area">
+                    <button class="btn-back" onclick="location.href='kursus.html'">Kembali</button>
+                </div>
+                <div class="txt-area">
+                    <p class="judul-nav">Pelajari Materi Smart<span>EDU</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="ctn2">
+            <div class="materi">
+                <div class="card-mtr">
+                    <div class="text-area">
+                        <div class="area-text">
+                            <p class="materi-text">Materi</p>
+                            <p class="materi-judul">Basic</p>
+                            <div class="poin">
+                                <p class="poin-text">Poin +10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button style="background-color: #5E6AFF;" class="btn-mtr">Mulai</button>
+                    </div>
+                </div>
+                <div class="card-mtr">
+                    <div class="text-area">
+                        <div class="area-text">
+                            <p class="materi-text">Materi</p>
+                            <p class="materi-judul">Intermediate</p>
+                            <div class="poin">
+                                <p class="poin-text">Poin +10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button style="background-color: #AE5EFF;" class="btn-mtr">Mulai</button>
+                    </div>
+                </div>
+                <div class="card-mtr">
+                    <div class="text-area">
+                        <div class="area-text">
+                            <p class="materi-text">Materi</p>
+                            <p class="materi-judul">Advanced</p>
+                            <div class="poin">
+                                <p class="poin-text">Poin +10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button style="background-color: #FF5E5E;" class="btn-mtr">Mulai</button>
+                    </div>
+                </div>
+                <div class="card-mtr">
+                    <div class="text-area">
+                        <div class="area-text">
+                            <p class="materi-text">Materi</p>
+                            <p class="materi-judul">Tips & Trick</p>
+                            <div class="poin">
+                                <p class="poin-text">Poin +10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button style="background-color: #FE63FE;" class="btn-mtr">Mulai</button>
+                    </div>
+                </div>
+                <div class="card-mtr">
+                    <div class="text-area">
+                        <div class="area-text">
+                            <p class="materi-text">Materi</p>
+                            <p class="materi-judul">Example</p>
+                            <div class="poin">
+                                <p class="poin-text">Poin +10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button style="background-color: #FFAE63;" class="btn-mtr">Mulai</button>
+                    </div>
+                </div>
+                <div style="background-color: #009A9A;" class="card-lny">
+                    <div class="text-area">
+                        <div class="area-text">
+                            <p style="color: #ffffff;" class="lny-judul">Lihat Materi Lainnya</p>
+                        </div>
+                    </div>
+                    <div class="btn-area">
+                        <button style="background-color: #ffffff; color: #009A9A;" class="btn-mtr">More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
