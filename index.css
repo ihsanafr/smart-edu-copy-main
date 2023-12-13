@@ -6,6 +6,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Plus Jakarta Sans';
 }
 
 /* nav css */
@@ -245,8 +246,9 @@ nav {
     width: 100%;
     display: flex;
     justify-content: left;
-    height: 200px;
+    height: 250px;
     align-items: center;
+    padding-left: 20px;
     /* flex-direction: row; */
 }
 
@@ -356,10 +358,12 @@ nav {
 }
 
 .card-kursus:hover {
-    transform: scale(1.1);
-    background-color: #2fd2bf0a;
-    /* Mengubah skala elemen saat hover */
+    transform: scale(1.1); 
+    background: rgba(238, 252, 255, 0.33);
+    
 }
+
+
 
 .img-kurs {
     width: 100%;
@@ -418,6 +422,8 @@ nav {
 
 
 
+
+
 /* test-judul*/
 .test-judul {
     height: 35vh;
@@ -430,7 +436,6 @@ nav {
 }
 
 .judul-test {
-    margin-top: 40px;
     font-family: plus jakarta sans;
     font-size: 30px;
     background-color: #ffffff;
@@ -439,6 +444,7 @@ nav {
     color: #2FD2BF;
     font-weight: bold;
     border-radius: 100px;
+    margin-bottom: 20px;
 }
 
 /* test CSSS-------- */
@@ -725,7 +731,7 @@ nav {
 .foter {
     font-family: plus jakarta sans;
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-color: #000000;
     display: flex;
     justify-content: center;
@@ -733,7 +739,7 @@ nav {
 }
 
 .foter-area {
-    margin-top: 40px;
+    margin-top: 50px;
     width: 90%;
     /* height: 200px; */
     display: flex;
@@ -798,6 +804,7 @@ nav {
     font-size: 14px;
     transition: transform 0.5s ease;
     cursor: pointer;
+    transition: 0.3s;
 }
 .ftt:hover {
     color: #2FD2BF;
@@ -829,6 +836,7 @@ nav {
     height : 50px;
     display: flex;
 }
+
 
 
 body.loading {
@@ -957,4 +965,829 @@ body.loading {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  body {
+    background: #ffffff;
+    min-height: 200vh;
+}
+
+/* Responsive */
+
+body.loading {
+    overflow: hidden;
+}
+
+.splash-screen-p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #eefcff;
+    /* Set the background color of the splash screen */
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.loading-bar-p {
+    width: 250px;
+    /* Set the width of the loading bar */
+    height: 30px;
+    background: #ffffff;
+    /* Set the color of the loading bar */
+    position: relative;
+    border-radius: 30px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.333);
+}
+
+.loading-bar-p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #009A9A;
+    /* Set the color of the loading progress */
+    animation: loadingAnimation 2s linear infinite;
+    /* Adjust the animation duration */
+}
+
+@keyframes loadingAnimation {
+    100% {
+        width: 100%;
+    }
+}
+
+.up-page-p {
+    /* margin-top: 10px; */
+    padding-top: 10px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.logo-page-p {
+    /* width: ; */
+    display: flex;
+    justify-content: left;
+}
+
+
+.contact-p {
+    /* margin: 10px 0px 0px 90px; */
+    text-decoration: none;
+    background: #2FD2BF;
+    color: white;
+    font-size: 0.7em;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+
+}
+
+header {
+    display: none;
+}
+
+.hero-p {
+    width: auto;
+    height: 500px;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #eefcff;
+}
+
+.img-hero-p {
+    margin-top: 200px;
+    overflow-y: hidden;
+    /* height: 50vh; */
+    transition: transform 0.5s ease;
+}
+
+.img-hero-p:hover {
+    transform: rotatey(200deg);
+}
+
+.tagline-p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    width: 80vw;
+    height: 20vh;
+
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.smart-p {
+    color: #000;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.edu-p {
+    color: #2FD2BF;
+    font-size: 1.5em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.hero-feature-p {
+    background: url(hero2.png);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin: 0px 6px 0px 6px;
+    width: 25vw;
+    height: auto;
+    text-align: center;
+    padding: 10px 2px 10px 2px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.221);
+    
+}
+
+.card-p:hover {
+    background: #ffffff88;
+}
+
+.video-p {
+    padding: 5px 2px 10px 2px;
+}
+
+.title-p {
+    color: #5E6AFF;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+
+.desk-p {
+    font-size: 0.5em;
+}
+
+.hero-about-p {
+    display: none;
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    display: none;
+}
+
+.desk-about-p {
+    text-align: justify;
+    font-size: 0.8em;
+    width: 80vw;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.area-card-p {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 90vw;
+}
+
+.card-about-p {
+    margin: 0px 10px 0px 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.152);
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+.cguru-p {
+    padding: 20px 10px 20px 10px;
+}
+
+.info-p {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.siswa-p {
+    font-weight: bold;
+    color: #FE63FE;
+}
+
+.guru-p {
+    font-weight: bold;
+    color: #FFAE63;
+}
+
+.sekolah-p {
+    font-weight: bold;
+    color: #009A9A;
+}
+
+.hero-course-p {
+    display: none;
+    flex-direction: column;
+    width: auto;
+    height: 600px;
+
+}
+
+.title-course-p {
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.title-area-course-p {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px 0px 40px;
+}
+
+.more-button-p {
+    background: #2FD2BF;
+    padding: 0px 15px 10px 15px;
+    border-radius: 40px;
+}
+
+.more-button-p a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+
+.terkenal-p {
+    color: #2FD2BF;
+    font-style: italic;
+}
+
+.area-card-course-p {
+    margin-left: 20px;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    padding: 0px 20px;
+    /* Sesuaikan dengan kebutuhan margin */
+    box-sizing: border-box;
+}
+
+.card-course-p {
+    /* Tetapkan lebar sesuai kebutuhan (contoh: 33.33% untuk tiga card di satu baris) */
+    flex: 0 0 70%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    padding: 5px 30px 0px 30px;
+    border-radius: 20px;
+    margin-right: 30px;
+    /* Sesuaikan dengan kebutuhan margin antar card */
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.352);
+    transition: transform 0.3s ease;
+
+}
+
+.card-course-p:hover{
+    
+    background: rgba(238, 252, 255, 0.33);
+}
+
+
+
+.course-p {
+    font-size: 1.7em;
+    color: #5E6AFF;
+    align-items: baseline;
+    font-weight: 800;
+    margin: 30px 0px 0px 0px;
+}
+
+.course-desk-p {
+    text-align: justify;
+    color: #5E6AFF;
+}
+
+.course-button-p {
+    margin-top: 40px;
+    text-decoration: none;
+    background-color: #5E6AFF;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px 70px 15px 70px; */
+    border-radius: 20px;
+}
+
+.proggraming-p {
+    color: #AE5EFF;
+}
+
+.network-p {
+    color: #FF5E5E;
+}
+
+.pro-p {
+    background: #AE5EFF;
+}
+
+.net-p {
+    background: #FF5E5E;
+}
+
+
+/* /////////////////////// */
+.hero-title-testimoni-p {
+    width: auto;
+    height: 15vh;
+    background: url(bg-testi.png);
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-testimoni-p {
+    background: white;
+    color: #2FD2BF;
+    font-weight: bold;
+    padding: 20px 90px 20px 90px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.289);
+}
+
+.hero-testimoni-p {
+    width: auto;
+    height: 80vh;
+    background: #eefcff;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-testi-p {
+    width: 80vw;
+    background: white;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 10px 0px 10px;
+    box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.092);
+    border-radius: 20px;
+}
+
+.area-user-p {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+
+}
+
+.user-testi-p {
+    display: flex;
+    align-items: center;
+}
+
+.nama-user-p {
+    margin: 0px 10px 0px 5px;
+    font-weight: bold;
+    color: #FE63FE;
+}
+
+.petik-p {
+    font-size: 2em;
+    font-weight: 800;
+    padding: 0px 30px 0px 0px;
+    color: #FE63FE;
+}
+
+.text-testi-p {
+    text-align: justify;
+    margin: 20px 10px 20px 10px;
+    font-size: 0.8em;
+    color: #FE63FE;
+}
+
+.dua-p {
+    color: #FFAE63;
+}
+
+.tiga-p {
+    color: #2FD2BF;
+}
+
+.hero-teacher-p {
+    display: none;
+    background: #eefcff;
+    width: auto;
+    height: 600px;
+}
+
+.title-teacher-p {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #2FD2BF;
+}
+
+.desk-title-teacher-p {
+    color: rgba(0, 0, 0, 0.6);
+    width: 300px;
+    font-size: 0.8em;
+    margin-top: 8px;
+}
+
+.edu-teacher-p {
+    font-style: italic;
+}
+
+.area-teacher-p {
+    margin-top: 20px;
+    margin-left: 20px;
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    padding: 0px 20px;
+    /* Sesuaikan dengan kebutuhan margin */
+    box-sizing: border-box;
+}
+
+.card-teacher-p {
+    /* background-size: cover; */
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 450px;
+    border-radius: 20px;
+    margin-right: 20px;
+    /* Sesuaikan dengan kebutuhan margin antar card */
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.352);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.t1-p {
+    background: url(teacher1-img.png);
+    background-size: cover;
+}
+
+.t2-p {
+    background: url(teacher2-img.png);
+    background-size: cover;
+
+}
+
+
+.t3-p{
+    background-image: url(teacher3-img.png);
+    background-size: cover;
+
+}
+.card-teacher-p:hover {
+    transform: scale(1.05);
+}
+
+.info-teacher-p {
+    background: rgba(94, 106, 255, 0.62);
+    height: 80px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+    padding-left: 20px;
+}
+
+.card-teacher-p:hover .info-teacher-p {
+    opacity: 0;
+}
+
+.overlay-p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+    height: 100%;
+    background: rgba(94, 106, 255, 0.62);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card-teacher-p:hover .overlay-p {
+    opacity: 1;
+}
+
+.overlay-p p {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.hero-join-p {
+    background: #eefcff;
+    width: auto;
+    height: 600px;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-footer-p {
+    display: none;
+    width: auto;
+    background: black;
+    height: 900px;
+    padding: 60px 0px 0px 40px;
+}
+
+.title-footer-p {
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.sub-footer-p {
+    color: rgba(255, 255, 255, 0.721);
+    margin: 10px 0px 10px 0px;
+    font-size: 0.8em;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+.sub-footer-p:hover {
+    color: #2FD2BF;
+}
+
+.footer-ic-p:hover {
+    transform: scale(1.1);
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+    animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+    animation: fade-right 1s ease-in;
+}
+
+/* ================================================ */
+
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+  @media screen and (max-width: 390px) {
+    *{
+        overflow-x: hidden;
+    }
+    .splash-screen{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .home{
+        display: none;
+    }
+    .sub-home{
+        display: none;
+    }
+    .about{
+        display: none;
+    }
+    .kursus{
+        display: none;
+    }
+    .test-judul{
+        display: none;
+    }
+    .test{
+        display: none;
+    }
+    .guru{
+        display: none;
+    }
+    .join{
+        display: none;
+    }
+    .foter{
+        display: none;
+    }
+
+    /* responsive */
+    .splash-screen-p{
+        display: block;
+        display: flex;
+    }
+
+    header {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: 0.6s;
+        /* padding: 40px 100px; */
+        z-index: 10000;
+        background: #eefcff;
+    }
+
+    header.sticky {
+        /* padding: 5px 100px; */
+        background: #ffffff;
+    }
+
+    header .logo {
+        /* margin: 0px 80px 0px 0px; */
+        position: relative;
+        font-weight: 700;
+        /* color: #fff; */
+        text-decoration: none;
+        /* font-size: 2em; */
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.6s;
+    }
+
+    header ul {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul li {
+        position: relative;
+        list-style: none;
+        font-size: 0.6em;
+        color: #000;
+    }
+
+    header ul li a {
+        /* position: relative; */
+        margin: 0 10px;
+        text-decoration: none;
+        color: #000;
+        letter-spacing: 1px;
+        font-weight: bold;
+        transition: 0.6s;
+    }
+
+    .about-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        width: 20vw;
+        /* margin: 0px 10px 0px 10px; */
+    }
+
+    header.sticky .logo,
+    header.sticky li a {
+        color: #000;
+    }
+    
+
+
+
+
+
+    .hero-p{
+        display: block;
+        display: flex;
+    }
+
+    .hero-feature-p{
+        display: block;
+        display: flex;
+    }
+    .hero-about-p{
+        display: block;
+        display: flex;
+    }
+    .hero-course-p{
+        display: block;
+        display: flex;
+    }
+    .hero-title-testimoni-p{
+        display: block;
+        display: flex;
+    }
+    .hero-testimoni-p{
+        display: block;
+        display: flex;
+    }
+    .hero-teacher-p{
+        display: block;
+    }
+    .hero-join-p{
+        display: block;
+        display: flex;
+    }
+    .hero-footer-p{
+        display: block;
+    }
+
   }

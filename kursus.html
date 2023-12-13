@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: plus jakarta sans;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100vw;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            padding-top: 50px;
+            background-color: #EEFCFF;
+        }
+
+        .nav-kurs {
+            width: 80%;
+            background-color: #ffffff;
+            height: 80px;
+            border-radius: 1000px;
+            box-shadow: 0px 0px 5px #00000023;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            position: fixed;
+            z-index: 999;
+        }
+
+        .btn-area {
+            /* background-color: beige; */
+            padding-left: 20px;
+            width: 10%;
+            height: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .btn-back {
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 1000px;
+            border: none;
+            font-size: 15px;
+            background-color: #2FD2BF;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .btn-back a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .judul-area {
+            width: 90%;
+            /* background-color: bisque; */
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .judul {
+            font-size: 200%;
+            font-weight: 700;
+        }
+
+        .judul span {
+            color: #2FD2BF;
+            font-style: italic;
+        }
+
+        .isi {
+            background-color: #EEFCFF;
+            height: auto;
+            padding-bottom: 90px;
+            width: 100vw;
+        }
+
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #EEFCFF;
+            display: grid;
+            grid-template-columns: repeat(3, 23%);
+            /* Tiga kolom dengan lebar yang sama */
+            gap: 50px;
+            /* Jarak antar elemen grid */
+        }
+
+        .card img {
+            margin-top: 40px;
+            width: 200px;
+        }
+
+        .card {
+            border-radius: 23.54px;
+            height: 450px;
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.095);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .jdl-kurs {
+            margin-top: 25px;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        .sub-card {
+            margin-top: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .card-des {
+            padding: 10px 30px;
+            background-color: #F2F2F2;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-weight: 700;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        .btn-gabung {
+            margin-top: 25px;
+            font-weight: 800;
+            color: #ffffff;
+            padding: 13px 30%;
+            border-radius: 100px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-gabung:hover {
+            background-color: #4f4f4f;
+
+        }
+        @media screen and (max-width: 390px) {
+        .nav-kurs {
+            margin-top: none;
+            padding: 0;
+            width: 100vw;
+            border-radius: 0;
+        }
+        .container{
+
+            width: 100vw;
+            padding: 0;
+        }
+       
+
+        .btn-area {
+            width: 30%;
+            padding: 0;
+            margin-left: 15px;
+        }
+        .judul {
+            padding: 0;
+            font-size: 100%;
+            font-weight: 700;
+        }
+        .btn-back {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            border-radius: 5px;
+            padding: 10px 30px 10px 30px;
+            border-radius: 20px;
+        }
+
+        .judul-area {
+            width: 70%;
+        }
+
+        .grid-container {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            grid-template-columns: repeat(1, 100%);
+            gap: none;
+        }
+
+        .card {
+            width: 70%;
+            margin: 0 10px;
+        }
+        
+    }
+</style>
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-kurs">
+            <div class="btn-area">
+                <button class="btn-back"><a href="index.html">Kembali</a></button>
+            </div>
+            <div class="judul-area">
+                <p class="judul">Jelajahi Kursus DI Smart<span>EDU</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="isi">
+        <div class="grid-container">
+            <div class="card">
+                <img src="front-end-web.png" alt="">
+                <p style="color: #5E6AFF;" class="jdl-kurs">Front-End Web</p>
+                <div class="sub-card">
+                    <p style="color: #5E6AFF;" class="card-des">24 Materi</p>
+                    <p style="color: #5E6AFF;" class="card-des">9 Jam</p>
+                </div>
+                <button style="background-color: #5E6AFF;" class="btn-gabung">Bergabung</button>
+            </div>
+            <div class="card">
+                <img src="back-end-web.png" alt="">
+                <p style="color: #AE5EFF;" class="jdl-kurs">Back-End Web</p>
+                <div class="sub-card">
+                    <p style="color: #AE5EFF;" class="card-des">27 Materi</p>
+                    <p style="color: #AE5EFF;" class="card-des">8.5 Jam</p>
+                </div>
+                <button style="background-color: #AE5EFF;" class="btn-gabung">Bergabung</button>
+            </div>
+            <div class="card">
+                <img src="android-developer.png" alt="">
+                <p style="color: #FF5E5E;" class="jdl-kurs">Android Developer</p>
+                <div class="sub-card">
+                    <p style="color: #FF5E5E;" class="card-des">31 Materi</p>
+                    <p style="color: #FF5E5E;" class="card-des">11 Jam</p>
+                </div>
+                <button style="background-color: #FF5E5E;" class="btn-gabung">Bergabung</button>
+            </div>
+            <div class="card">
+                <img src="game-developer.png" alt="">
+                <p style="color: #FE63FE;" class="jdl-kurs">Game Developer</p>
+                <div class="sub-card">
+                    <p style="color: #FE63FE;" class="card-des">23 Materi</p>
+                    <p style="color: #FE63FE;" class="card-des">7.8 Jam</p>
+                </div>
+                <button style="background-color: #FE63FE;" class="btn-gabung">Bergabung</button>
+            </div>
+            <div class="card">
+                <img src="ux-research.png" alt="">
+                <p style="color: #FFAE63;" class="jdl-kurs">UX Research</p>
+                <div class="sub-card">
+                    <p style="color: #FFAE63;" class="card-des">21 Materi</p>
+                    <p style="color: #FFAE63;" class="card-des">6.9 Jam</p>
+                </div>
+                <button style="background-color: #FFAE63;" class="btn-gabung">Bergabung</button>
+            </div>
+            <div class="card">
+                <img src="3d-design.png" alt="">
+                <p style="color: #009A9A;" class="jdl-kurs">3D Design</p>
+                <div class="sub-card">
+                    <p style="color: #009A9A;" class="card-des">17 Materi</p>
+                    <p style="color: #009A9A;" class="card-des">4.5 Jam</p>
+                </div>
+                <button style="background-color: #009A9A;" class="btn-gabung">Bergabung</button>
+            </div>
+            <div class="card">
+                <img src="graphic-design.png" alt="">
+                <p style="color: #5E6AFF;" class="jdl-kurs">Graphic Design</p>
+                <div class="sub-card">
+                    <p style="color: #5E6AFF;" class="card-des">23 Materi</p>
+                    <p style="color: #5E6AFF;" class="card-des">5.9 Jam</p>
+                </div>
+                <button style="background-color: #5E6AFF;" class="btn-gabung">Bergabung</button>
+            </div>
+            <div class="card">
+                <img src="photo-editing.png" alt="">
+                <p style="color: #AE5EFF;" class="jdl-kurs">Photo Editing</p>
+                <div class="sub-card">
+                    <p style="color: #AE5EFF;" class="card-des">18 Materi</p>
+                    <p style="color: #AE5EFF;" class="card-des">4.8 Jam</p>
+                </div>
+                <button style="background-color: #AE5EFF;" class="btn-gabung">Bergabung</button>
+            </div>
+            <div class="card">
+                <img src="video-editing.png" alt="">
+                <p style="color: #FF5E5E;" class="jdl-kurs">Video Editing</p>
+                <div class="sub-card">
+                    <p style="color: #FF5E5E;" class="card-des">22 Materi</p>
+                    <p style="color: #FF5E5E;" class="card-des">6.7 Jam</p>
+                </div>
+                <button style="background-color: #FF5E5E;" class="btn-gabung">Bergabung</button>
+            </div>
+            <div class="card">
+                <img src="iot-basic.png" alt="">
+                <p style="color: #FE63FE;" class="jdl-kurs">IOT Basic</p>
+                <div class="sub-card">
+                    <p style="color: #FE63FE;" class="card-des">38 Materi</p>
+                    <p style="color: #FE63FE;" class="card-des">11.5 Jam</p>
+                </div>
+                <button style="background-color: #FE63FE;" class="btn-gabung">Bergabung</button>
+            </div>
+            <div class="card">
+                <img src="network-fdmtl.png" alt="">
+                <p style="color: #FFAE63;" class="jdl-kurs">Network Fundamental</p>
+                <div class="sub-card">
+                    <p style="color: #FFAE63;" class="card-des">36 Materi</p>
+                    <p style="color: #FFAE63;" class="card-des">10 Jam</p>
+                </div>
+                <button style="background-color: #FFAE63;" class="btn-gabung">Bergabung</button>
+            </div>
+            <div class="card">
+                <img src="cloud-engginer.png" alt="">
+                <p style="color: #009A9A;" class="jdl-kurs">Cloud Engginer</p>
+                <div class="sub-card">
+                    <p style="color: #009A9A;" class="card-des">16 Materi</p>
+                    <p style="color: #009A9A;" class="card-des">4.7 Jam</p>
+                </div>
+                <button style="background-color: #009A9A;" class="btn-gabung">Bergabung</button>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+
+</html>
